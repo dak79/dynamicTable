@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-flow: row;
+  padding: 1em;
+  background-color: #226766;
+  justify-content: center;
+  color: white;
+}
+
+label,
+input,
+button {
+  padding: 1em;
+}
+
+input {
+  background-color: #699;
+  color: white;
+  border-radius: 5em;
+  border: none;
+  outline: none;
+}
+
+button {
+  margin-left: 1em;
+  border-radius: 5em;
+  outline: none;
+  background-color: #699;
+  color: white;
+  box-shadow: 0.5em 0.5em 0.5em rgba(255, 255, 255, 0.2);
+  border: none;
+  transition: box-shadow 0.8s ease, transform 0.8s ease;
+}
+
+button:active {
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0.2), inset 0.3em 0.3em 1em rgba(255, 255, 255, 0.6);
+  transform: translate(0.3em, 0.3em);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+input:focus,
+button:focus,
+input:hover,
+button:hover {
+  border-bottom: 0.2em solid white;
+}
+
+input[type="number"] {
+  min-width: 10em;
+  text-align: center;
+}
+
+caption {
+  padding: 1em;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: #40807f;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+  border: 1px solid white;
+  font-family: sans-serif;
+  padding: 10px;
+  color: white;
+}
+
+th {
+  background-color: #226766;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #667b7a;
+}
+
+tr:nth-child(odd) {
+  background-color: #83a1a1;
+}
+
+.find {
+  background-color: #606060 !important;
+}

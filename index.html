@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dynamic Table</title>
+  </head>
+
+  <body>
+    <section>
+      <label for="nbRows">Number of Rows</label>
+      <input type="number" min="0" max="200" step="5" placeholder="5-200" id="nbRows" />
+      <button type="button" id="btnCreate">Create Table</button>
+    </section>
+    <section>
+      <label for="search">Search:</label>
+      <input type="text" id="search" />
+      <button type="button" id="btnSearch">Search</button>
+      <button type="button" id="btnClear">Clear</button>
+    </section>
+    <section>
+      <span id="warning"></span>
+    </section>
+    <table id="myTable" class="pagination" data-pagecount="15">
+      <caption>In which city they live?</caption>
+      <tbody>
+        <tr>
+          <th scope="col">Given Name</th>
+          <th scope="col">Family Name</th>
+          <th scope="col">City</th>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </body>
+
+
+</html>
